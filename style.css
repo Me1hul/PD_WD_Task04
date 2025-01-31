@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a{
+    color: rgb(11, 10, 10);
+    /* margin: 6px 1px; */
+    padding: 10px;
+    text-decoration: none;
+    background-color:#E2F8FF;
+    border-radius: 5px;
+    
+    /* width: 2x */
+}
+nav ul li a:hover {
+    background-color: #ede7e7;  
+    padding: 10px;
+    text-decoration: none;
+    background-color:#E2F8FF;
+    border-radius: 5px;
+    transition: transform 0.38;
+}
+nav ul li a:hover {
+    background-color:#E2F8FF;  
+    padding: 10px;
+    text-decoration: none;
+    /* background-color:#E2F8FF; */
+    border-radius: 5px;
+    transition: transform 0.38;
+}
+
+/* navbar styling */
+.navbar{
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: 2px solid rgb(223, 251, 219);
+}
+
+/* logo style  */
+.logo img{
+    width: 4rem;
+    height: 4rem;
+    margin-left:1rem;
+    border-radius: 5rem;
+}
+
+.hamburger-menu{
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .line{
+    display: block;
+    width:2.5rem;
+   height: 2px;
+   margin-bottom: 10px;
+   background-color: black;
+   cursor: pointer;
+}
+
+.nav-menu{
+    position: fixed;
+    width: 94%;
+    top: 6rem;
+    left: 18px;
+    background-color:#E2F8FF;
+    font-weight: 600;
+    
+}
+.nav-menu a{
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+.nav-menu a:hover{
+    background-color:#E2F8FF;
+}
+#about {
+    background-color:#E2F8FF;
+    border-radius: 2rem;
+    margin: 0 25px;
+    padding: auto;
+}
+
+.aboutme {
+    text-align: center;
+}
+
+
+.Project {
+    text-align: center;
+    align-items: center;
+}
+
+#projects {
+    background-color:#E2F8FF;
+    border-radius: 2rem;
+    margin: 0 25px;
+    padding: auto;
+
+}
+
+#skills {
+    border-radius: 2rem;
+    text-align: center;
+
+    
+}
+
+.skills {
+    display: flex;
+    background-color:#E2F8FF;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2rem;
+    margin: 0 25px;
+    padding: auto;
+    /* list-style: none; */
+}
+
+
+.html {
+    width: 5rem;
+    height: 2rem;
+    margin: 6px auto;
+    background-color: #61DAFB;
+    border-radius: 2rem;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.contain{
+    background-color:#E2F8FF;
+    border-radius: 2rem;
+    text-decoration: none;
+    /* text-align: center; */
+    border-radius: 2rem;
+    margin: 0 25px;
+    padding: auto;
+    justify-content: center;
+}
+.contain p,h3{
+    margin-left: 20px;
+}
+.contain h4{
+
+    font-size: large;
+    /* align-items: center; */
+    text-align: center;
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    
+}
+
+
+.contactme {
+    text-align: center;
+}
+
+#contact {
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    
+    z-index: 1;
+    position: relative;
+    font-size: 20px;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    margin: auto 3px;
+    outline: none;
+    border: none;
+    background-color:#63c0ef;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+
+button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#030303;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform 0.38s ease-in-out;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+
+button:hover::before {
+    transform-origin: center bottom;
+    transform: scaleY(1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.hide{
+    display: none;
+}
+
+/* for Desktop view  */
+@media screen and (min-width:600px){
+    .navbar{
+        justify-content: space-around;
+    }
+    .nav-menu{
+        display: block;
+        position: static;
+        width: auto;
+        margin-right:20px;
+        background: none;
+    }
+    .nav-menu a{
+        display: inline-block;
+        padding: 15px 20px;
+    }
+    .nav-menu a:hover{
+        background-color:#E2F8FF;
+        border-radius: 5px;
+    }
+    .hamburger-menu{
+        display: none;
+    }
+
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color:#E2F8FF;
+    color: rgb(42, 37, 37);
+}
